@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body{
+            background-color: burlywood;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:saddlebrown;
+        }
+        div{
+            display: grid;
+            justify-items: center;
+            gap: 20px;
+            font-size:40px;;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            background-color: saddlebrown;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:burlywood;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: burlywood;
+            color: saddlebrown;
+            transition-duration: 2s;
+        }
+        .buttons{
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Stopwatch</h1>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="buttons">
+          <button id="start">START</button>
+          <button id="stop">STOP</button>
+          <button id="reset">RESET</button>
+          <button id="try-me"> Try Me</button>
+        </div>
+        <p id="date"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
